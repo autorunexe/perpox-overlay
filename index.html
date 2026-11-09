@@ -39,6 +39,7 @@
       aspect-ratio: 850 / 240;
       overflow: hidden;
       color: var(--amber);
+      font-weight: 600;
       filter: none;
     }
 
@@ -47,9 +48,17 @@
       z-index: -2;
       inset: 15% 8%;
       background:
-        radial-gradient(ellipse at 22% 52%, rgba(255, 180, 52, .075), transparent 30%),
-        radial-gradient(ellipse at 68% 53%, rgba(255, 180, 52, .065), transparent 40%);
-      filter: blur(9px);
+        radial-gradient(ellipse at 22% 52%, rgba(255, 180, 52, .14), transparent 30%),
+        radial-gradient(ellipse at 68% 53%, rgba(255, 180, 52, .12), transparent 40%);
+      filter: blur(11px);
+      transform-origin: center;
+      animation: aura-breathe 3.2s ease-in-out infinite;
+      will-change: opacity, transform;
+    }
+
+    @keyframes aura-breathe {
+      0%, 100% { opacity: .62; transform: scale(.96); }
+      50% { opacity: 1; transform: scale(1.03); }
     }
 
     /* A still, lightweight grain layer adds texture without a network asset. */
@@ -86,7 +95,7 @@
       position: absolute;
       top: 24%;
       right: 0;
-      width: 2px;
+      width: 3px;
       height: 52%;
       background: rgba(255, 180, 52, .62);
       box-shadow: 0 0 5px rgba(255, 180, 52, .24);
