@@ -1,0 +1,18 @@
+OVERLAY LIVE SUPPORT
+
+Overlay live support dengan logo yang disediakan. Efek dan animasi ada di index.html; logo dibaca dari logo.png di folder yang sama. Tidak ada font atau skrip dari internet.
+
+Pakai di OBS Studio:
+1. Tambahkan sumber Browser.
+2. Aktifkan Local file, lalu pilih index.html dari folder src ini. Biarkan logo.png tetap di folder yang sama.
+3. Atur Width 850 dan Height 240.
+4. Posisikan sumber overlay di scene sesuai keinginan.
+
+Pesan berganti tiap 4 detik: SUPPORT ON BIO, MEDIASHARE ON, FOLLOW FOR MORE.
+Logo mengalami glitch tiap 5 detik, titik LIVE berkedip, garis pemisah sejajar dengan blok teks, dan tanda /// muncul dengan animasi ketik berulang.
+
+Untuk URL publik yang bisa ditempel ke Browser Source, file ini perlu diunggah ke hosting web statis. File lokal ini belum memiliki URL publik.
+
+Penyesuaian yang dibutuhkan untuk versi final:
+- Sebutkan platform streaming dan ukuran/posisi overlay.
+- Konfirmasi teks CTA dan interval pergantiannya.
